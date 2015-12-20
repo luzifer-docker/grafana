@@ -1,6 +1,6 @@
 # luzifer-docker / grafana
 
-This container currently only contains the [Grafana](http://grafana.org/) 2.5.0.
+This container currently only contains the [Grafana](http://grafana.org/) 2.6.0.
 
 ## Running your Grafana image
 --------------------------
