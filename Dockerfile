@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-ENV GRAFANA_VERSION 4.0.0-1480439068
+ENV GRAFANA_VERSION 4.0.1-1480694114
 
 RUN apt-get update \
  && apt-get install -y unzip libfontconfig wget adduser openssl ca-certificates \
