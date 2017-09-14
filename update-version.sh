@@ -31,7 +31,7 @@ docker build .
 echo "Updating repository..."
 git add Dockerfile
 git -c user.name='Travis Automated Update' -c user.email='travis@luzifer.io' \
-  commit -m "Jenkins ${LATEST}"
+  commit -m "Grafana ${LATEST}"
 git tag ${LATEST}
 
 git push -q https://${GH_USER}:${GH_TOKEN}@github.com/luzifer-docker/grafana.git master --tags
