@@ -11,7 +11,7 @@ RUN set -ex \
       libfontconfig \
       openssl \
       unzip \
- && curl -sSfLo /tmp/grafana.deb "https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_${GRAFANA_VERSION}_amd64.deb" \
+ && curl -sSfLo /tmp/grafana.deb "https://dl.grafana.com/oss/release/grafana_${GRAFANA_VERSION}_amd64.deb" \
  && dpkg -i /tmp/grafana.deb \
  && rm /tmp/grafana.deb \
  && rm -rf /var/lib/apt/lists/*
