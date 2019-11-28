@@ -1,6 +1,6 @@
 FROM debian:stable
 
-ENV GRAFANA_VERSION 6.5.0
+ENV GRAFANA_VERSION 6.5.1
 
 RUN set -ex \
  && apt-get update \
