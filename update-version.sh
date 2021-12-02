@@ -14,7 +14,7 @@ git reset --hard origin/master
 ### ---- ###
 
 echo "Fetching latest version..."
-LATEST=$(curl -sSLf 'https://latest.luzifer.io/catalog-api/grafana/latest.txt?p=version')
+LATEST=$(curl -sSLf 'https://lv.luzifer.io/v1/catalog/grafana/latest/version')
 
 echo "Found version ${LATEST}, patching..."
 sed -i "s/^ENV GRAFANA_VERSION.*$/ENV GRAFANA_VERSION ${LATEST}/" Dockerfile
