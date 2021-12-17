@@ -1,6 +1,6 @@
 FROM debian:stable
 
-ENV GRAFANA_VERSION 8.3.2
+ENV GRAFANA_VERSION 8.3.3
 
 RUN set -ex \
  && apt-get update \
