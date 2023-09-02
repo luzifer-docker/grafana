@@ -9,6 +9,7 @@ RUN set -ex \
       ca-certificates \
       curl \
       libfontconfig \
+      musl \
       openssl \
       unzip \
  && curl -sSfLo /tmp/grafana.deb "https://dl.grafana.com/oss/release/grafana_${GRAFANA_VERSION}_amd64.deb" \
