@@ -25,7 +25,7 @@ jobs:
       - name: Check if tag already exists remotely
         id: tag_exists
         run: |
-          if git ls-remote --tags origin | grep -q "refs/tags/${{ steps.get_tag.outputs.tag }}$"; then
+          if git tag | grep -q "^${{ steps.get_tag.outputs.tag }}$"; then
             echo "Tag already exists."
             echo "exists=true" >> "$GITHUB_OUTPUT"
           else
