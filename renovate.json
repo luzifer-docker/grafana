@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "datasourceTemplate": "github-releases",
+      "managerFilePatterns": [
+        "/Dockerfile/"
+      ],
+      "matchStrings": [
+        "GRAFANA_VERSION=(?<currentValue>.*?)\\s"
+      ],
+      "packageNameTemplate": "grafana/grafana"
+    }
+  ],
+  "extends": [
+    "local>luzifer/renovate-config"
+  ]
+}

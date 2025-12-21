@@ -1,6 +1,6 @@
-FROM debian:stable
+FROM debian:13.2
 
-ENV GRAFANA_VERSION 12.3.1
+ENV GRAFANA_VERSION=12.3.1
 
 RUN set -ex \
  && apt-get update \
