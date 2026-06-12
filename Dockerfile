@@ -1,6 +1,6 @@
 FROM debian:13.5@sha256:fe7312b5f05bf5f43fad76bcd8945642e4e47a68aefd1b73f447615899d0fac1
 
-ENV GRAFANA_VERSION=13.0.1
+ENV GRAFANA_VERSION=v13.0.2
 
 RUN set -ex \
  && apt-get update \
